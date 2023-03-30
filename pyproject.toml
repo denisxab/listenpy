@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "listenpy"
-version = "0.1.0"
+version = "0.1.1"
 description = " "
 authors = ["Denis Kustov <pro-progerkustov@yandex.ru>"]
 readme = "README.md"

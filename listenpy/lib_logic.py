@@ -84,10 +84,10 @@ def recognize_speech(model: Model):
 
             # Если аудиоданные достаточны для распознавания, выводим результат в виде текста
             if recognizer.AcceptWaveform(data):
-                i += 1
                 res = json.loads(recognizer.Result())
                 text = replace_words_with_symbols(res["text"])
                 if text:
+                    i += 1
                     print(
                         f"{i}\t> {text}",
                     )
