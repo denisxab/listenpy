@@ -1,0 +1,94 @@
+
+   [3]listenpy
+   ____________________
+     * [4]download_and_extract_model()
+     * [5]init_recognizer()
+     * [6]recognize_speech()
+     * [7]replace_words_with_symbols()
+     * [8]text2num
+     * [9]text2punct
+
+   [10]listenpy
+     *
+     * <no title>
+     * [11]Просмотреть исходный код страницы
+     __________________________________________________________________
+
+   lib_logic.download_and_extract_model(model_name: str, path: Path)[12]
+          Функция скачивания и распаковки модели.
+
+          Входные параметры: - model (str): Модель для скачивания. - path
+          (str): Путь для сохранения и распаковки модели.
+
+   lib_logic.init_recognizer(model: Model, sample_rate: float)[13]
+          Функция инициализации KaldiRecognizer.
+
+          Входные параметры: - sample_rate (float): Частота дискретизации
+          микрофона (обычно 16000 Гц).
+
+          Возвращает: - KaldiRecognizer: Инициализированный объект
+          KaldiRecognizer.
+
+   lib_logic.recognize_speech()[14]
+          Функция непрерывного распознавания голоса с микрофона.
+
+   lib_hum.replace_words_with_symbols(text: str) → str[15]
+          Замена слов на их символьное обозначение
+
+   lib_hum.text2num = {'восемнадцать': '18', 'восемь': '8', 'восемьдесят':
+          '80', 'восемьсот': '800', 'восьмой': '8', 'второй': '2', 'два':
+          '2', 'двадцать': '20', 'двенадцать': '12', 'двести': '200',
+          'девяносто': '90', 'девятнадцать': '19', 'девятый': '9',
+          'девять': '9', 'девятьсот': '900', 'десять': '10', 'миллиард':
+          '1000000000', 'миллиарда': '1000000000', 'миллиардов':
+          '1000000000', 'миллион': '1000000', 'миллиона': '1000000',
+          'миллионов': '1000000', 'ноль': '0', 'один': '1', 'одиннадцать':
+          '11', 'первый': '1', 'пятнадцать': '15', 'пятый': '5', 'пять':
+          '5', 'пятьдесят': '50', 'пятьсот': '500', 'седьмой': '7',
+          'семнадцать': '17', 'семь': '7', 'семьдесят': '70', 'семьсот':
+          '700', 'сорок': '40', 'сто': '100', 'третий': '3', 'три': '3',
+          'тридцать': '30', 'тринадцать': '13', 'триста': '300', 'тысяч':
+          '1000', 'тысяча': '1000', 'тысячи': '1000', 'четвертый': '4',
+          'четыре': '4', 'четыреста': '400', 'четырнадцать': '14',
+          'шестнадцать': '16', 'шестой': '6', 'шесть': '6', 'шестьдесят':
+          '60', 'шестьсот': '600'}[16]
+          Замена цифр
+
+   lib_hum.text2punct = {'вопросительный знак': '?', 'восклицательный
+          знак': '!', 'двоеточие': ':', 'длинное тире': '—', 'запятая':
+          ',', 'кавычки': '"', 'квадратные скобки': '[]', 'скобки': '()',
+          'тире': '-', 'точка': '.', 'точка с запятой': ';', 'фигурные
+          скобки': '{}'}[17]
+          Замена пунктуации
+     __________________________________________________________________
+
+   © Copyright .
+   Собрано при помощи [18]Sphinx с использованием [19]темы,
+   предоставленной [20]Read the Docs.
+
+Ссылки
+
+   Видимых ссылок:
+   1. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/genindex.html
+   2. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/search.html
+   3. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html
+   4. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html
+   5. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_logic.init_recognizer
+   6. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_logic.recognize_speech
+   7. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_hum.replace_words_with_symbols
+   8. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_hum.text2num
+   9. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_hum.text2punct
+  10. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html
+  11. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/_sources/index.rst.txt
+  12. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_logic.download_and_extract_model
+  13. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_logic.init_recognizer
+  14. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_logic.recognize_speech
+  15. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_hum.replace_words_with_symbols
+  16. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_hum.text2num
+  17. file:///media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html#lib_hum.text2punct
+  18. https://www.sphinx-doc.org/
+  19. https://github.com/readthedocs/sphinx_rtd_theme
+  20. https://readthedocs.org/
+
+   Скрытых ссылок:
+  22. file://localhost/media/denis/130479d6-b6a6-45e3-b75b-f2c4b6c004b52/MyProject/listenpy/docs/build/html/index.html

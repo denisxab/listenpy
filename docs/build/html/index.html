@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; документация listenpy </title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            listenpy
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">download_and_extract_model()</span></code></a></li>
+<li><a class="reference internal" href="#lib_logic.init_recognizer"><code class="docutils literal notranslate"><span class="pre">init_recognizer()</span></code></a></li>
+<li><a class="reference internal" href="#lib_logic.recognize_speech"><code class="docutils literal notranslate"><span class="pre">recognize_speech()</span></code></a></li>
+<li><a class="reference internal" href="#lib_hum.replace_words_with_symbols"><code class="docutils literal notranslate"><span class="pre">replace_words_with_symbols()</span></code></a></li>
+<li><a class="reference internal" href="#lib_hum.text2num"><code class="docutils literal notranslate"><span class="pre">text2num</span></code></a></li>
+<li><a class="reference internal" href="#lib_hum.text2punct"><code class="docutils literal notranslate"><span class="pre">text2punct</span></code></a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">listenpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="toctree-wrapper compound">
+</div>
+<span class="target" id="module-lib_logic"></span><dl class="py function">
+<dt class="sig sig-object py" id="lib_logic.download_and_extract_model">
+<span class="sig-prename descclassname"><span class="pre">lib_logic.</span></span><span class="sig-name descname"><span class="pre">download_and_extract_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_logic.download_and_extract_model" title="Ссылка на это определение"></a></dt>
+<dd><p>Функция скачивания и распаковки модели.</p>
+<p>Входные параметры:
+- model (str): Модель для скачивания.
+- path (str): Путь для сохранения и распаковки модели.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_logic.init_recognizer">
+<span class="sig-prename descclassname"><span class="pre">lib_logic.</span></span><span class="sig-name descname"><span class="pre">init_recognizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_rate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_logic.init_recognizer" title="Ссылка на это определение"></a></dt>
+<dd><p>Функция инициализации KaldiRecognizer.</p>
+<p>Входные параметры:
+- sample_rate (float): Частота дискретизации микрофона (обычно 16000 Гц).</p>
+<p>Возвращает:
+- KaldiRecognizer: Инициализированный объект KaldiRecognizer.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_logic.recognize_speech">
+<span class="sig-prename descclassname"><span class="pre">lib_logic.</span></span><span class="sig-name descname"><span class="pre">recognize_speech</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib_logic.recognize_speech" title="Ссылка на это определение"></a></dt>
+<dd><p>Функция непрерывного распознавания голоса с микрофона.</p>
+</dd></dl>
+
+<span class="target" id="module-lib_hum"></span><dl class="py function">
+<dt class="sig sig-object py" id="lib_hum.replace_words_with_symbols">
+<span class="sig-prename descclassname"><span class="pre">lib_hum.</span></span><span class="sig-name descname"><span class="pre">replace_words_with_symbols</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#lib_hum.replace_words_with_symbols" title="Ссылка на это определение"></a></dt>
+<dd><p>Замена слов на их символьное обозначение</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="lib_hum.text2num">
+<span class="sig-prename descclassname"><span class="pre">lib_hum.</span></span><span class="sig-name descname"><span class="pre">text2num</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'восемнадцать':</span> <span class="pre">'18',</span> <span class="pre">'восемь':</span> <span class="pre">'8',</span> <span class="pre">'восемьдесят':</span> <span class="pre">'80',</span> <span class="pre">'восемьсот':</span> <span class="pre">'800',</span> <span class="pre">'восьмой':</span> <span class="pre">'8',</span> <span class="pre">'второй':</span> <span class="pre">'2',</span> <span class="pre">'два':</span> <span class="pre">'2',</span> <span class="pre">'двадцать':</span> <span class="pre">'20',</span> <span class="pre">'двенадцать':</span> <span class="pre">'12',</span> <span class="pre">'двести':</span> <span class="pre">'200',</span> <span class="pre">'девяносто':</span> <span class="pre">'90',</span> <span class="pre">'девятнадцать':</span> <span class="pre">'19',</span> <span class="pre">'девятый':</span> <span class="pre">'9',</span> <span class="pre">'девять':</span> <span class="pre">'9',</span> <span class="pre">'девятьсот':</span> <span class="pre">'900',</span> <span class="pre">'десять':</span> <span class="pre">'10',</span> <span class="pre">'миллиард':</span> <span class="pre">'1000000000',</span> <span class="pre">'миллиарда':</span> <span class="pre">'1000000000',</span> <span class="pre">'миллиардов':</span> <span class="pre">'1000000000',</span> <span class="pre">'миллион':</span> <span class="pre">'1000000',</span> <span class="pre">'миллиона':</span> <span class="pre">'1000000',</span> <span class="pre">'миллионов':</span> <span class="pre">'1000000',</span> <span class="pre">'ноль':</span> <span class="pre">'0',</span> <span class="pre">'один':</span> <span class="pre">'1',</span> <span class="pre">'одиннадцать':</span> <span class="pre">'11',</span> <span class="pre">'первый':</span> <span class="pre">'1',</span> <span class="pre">'пятнадцать':</span> <span class="pre">'15',</span> <span class="pre">'пятый':</span> <span class="pre">'5',</span> <span class="pre">'пять':</span> <span class="pre">'5',</span> <span class="pre">'пятьдесят':</span> <span class="pre">'50',</span> <span class="pre">'пятьсот':</span> <span class="pre">'500',</span> <span class="pre">'седьмой':</span> <span class="pre">'7',</span> <span class="pre">'семнадцать':</span> <span class="pre">'17',</span> <span class="pre">'семь':</span> <span class="pre">'7',</span> <span class="pre">'семьдесят':</span> <span class="pre">'70',</span> <span class="pre">'семьсот':</span> <span class="pre">'700',</span> <span class="pre">'сорок':</span> <span class="pre">'40',</span> <span class="pre">'сто':</span> <span class="pre">'100',</span> <span class="pre">'третий':</span> <span class="pre">'3',</span> <span class="pre">'три':</span> <span class="pre">'3',</span> <span class="pre">'тридцать':</span> <span class="pre">'30',</span> <span class="pre">'тринадцать':</span> <span class="pre">'13',</span> <span class="pre">'триста':</span> <span class="pre">'300',</span> <span class="pre">'тысяч':</span> <span class="pre">'1000',</span> <span class="pre">'тысяча':</span> <span class="pre">'1000',</span> <span class="pre">'тысячи':</span> <span class="pre">'1000',</span> <span class="pre">'четвертый':</span> <span class="pre">'4',</span> <span class="pre">'четыре':</span> <span class="pre">'4',</span> <span class="pre">'четыреста':</span> <span class="pre">'400',</span> <span class="pre">'четырнадцать':</span> <span class="pre">'14',</span> <span class="pre">'шестнадцать':</span> <span class="pre">'16',</span> <span class="pre">'шестой':</span> <span class="pre">'6',</span> <span class="pre">'шесть':</span> <span class="pre">'6',</span> <span class="pre">'шестьдесят':</span> <span class="pre">'60',</span> <span class="pre">'шестьсот':</span> <span class="pre">'600'}</span></em><a class="headerlink" href="#lib_hum.text2num" title="Ссылка на это определение"></a></dt>
+<dd><p>Замена цифр</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="lib_hum.text2punct">
+<span class="sig-prename descclassname"><span class="pre">lib_hum.</span></span><span class="sig-name descname"><span class="pre">text2punct</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'вопросительный</span> <span class="pre">знак':</span> <span class="pre">'?',</span> <span class="pre">'восклицательный</span> <span class="pre">знак':</span> <span class="pre">'!',</span> <span class="pre">'двоеточие':</span> <span class="pre">':',</span> <span class="pre">'длинное</span> <span class="pre">тире':</span> <span class="pre">'—',</span> <span class="pre">'запятая':</span> <span class="pre">',',</span> <span class="pre">'кавычки':</span> <span class="pre">'&quot;',</span> <span class="pre">'квадратные</span> <span class="pre">скобки':</span> <span class="pre">'[]',</span> <span class="pre">'скобки':</span> <span class="pre">'()',</span> <span class="pre">'тире':</span> <span class="pre">'-',</span> <span class="pre">'точка':</span> <span class="pre">'.',</span> <span class="pre">'точка</span> <span class="pre">с</span> <span class="pre">запятой':</span> <span class="pre">';',</span> <span class="pre">'фигурные</span> <span class="pre">скобки':</span> <span class="pre">'{}'}</span></em><a class="headerlink" href="#lib_hum.text2punct" title="Ссылка на это определение"></a></dt>
+<dd><p>Замена пунктуации</p>
+</dd></dl>
+
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
