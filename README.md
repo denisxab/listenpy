@@ -2,7 +2,7 @@
 
 ListenPy - это библиотека для распознавания речи с использованием KaldiRecognizer.
 
-![logo](docs/source/_static/logo307x307.png)
+![logo](https://raw.githubusercontent.com/denisxab/listenpy/main/docs/source/_static/logo307x307.png)
 
 ## Модели Vosk
 
