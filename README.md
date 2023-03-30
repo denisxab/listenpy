@@ -6,8 +6,8 @@ ListenPy - это библиотека для распознавания реч�
 
 ## Модели Vosk
 
-Все модели Vosk: <https://alphacephei.com/vosk/models>
-Легкая модель Vosk для русского языка: <https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip>
+- Все модели Vosk: <https://alphacephei.com/vosk/models>
+- Легкая модель Vosk для русского языка: <https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip>
 
 ## Установка
 
