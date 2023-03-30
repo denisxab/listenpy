@@ -87,9 +87,10 @@ def recognize_speech(model: Model):
                 i += 1
                 res = json.loads(recognizer.Result())
                 text = replace_words_with_symbols(res["text"])
-                print(
-                    f"{i}\t> {text}",
-                )
+                if text:
+                    print(
+                        f"{i}\t> {text}",
+                    )
     except KeyboardInterrupt:
         print("\nЗавершение программы")
         exit(0)
